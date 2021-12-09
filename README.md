@@ -32,3 +32,5 @@ Mi Card is a personal business card. Imagine every time you wanted to give someo
 ## Cheat Sheets
 
 UI: https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+
+https://docs.flutter.dev/development/ui/widgets/layout
