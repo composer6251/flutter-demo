@@ -25,28 +25,29 @@ class MyApp extends StatelessWidget {
             verticalDirection: VerticalDirection.up, //  Direction of children
 
             children: [
-              Container(
-                child: Text('Container 1'),
-                height: 100.0,
-                width: 400.0,
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                      'CARD 1',
+                       style: TextStyle(
+                         fontSize: 20.0,
+                  )),
+                ),
                 color: Colors.white,
                 margin: EdgeInsets.fromLTRB(30,20,10,0),
-                padding: EdgeInsets.all(20),
               ),
-              Container(
-                child: Text('Container 2'),
-                height: 100,
-                width: 100 ,
-                color: Colors.red,
-                margin: EdgeInsets.fromLTRB(30,20,10,0),
-                padding: EdgeInsets.all(20),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/TestingLogo.png'),
+
               ),
               // SizedBox( // to create space between children.
               //   height: 100,
               // ),
               Container(
                 child: Text('Container 3'),
-                height: 100,
+                height: 30,
                 width: 100 ,
                 color: Colors.green,
                 margin: EdgeInsets.fromLTRB(30,20,10,0),
@@ -55,13 +56,31 @@ class MyApp extends StatelessWidget {
               Container(
                 width: double.infinity, // as wide as the screen allows
               ),
+              Container(
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.add_shopping_cart,
+                      size: 100.0,
+                      color: Colors.lightBlueAccent,
+                    ),
+                  ],
+                )
+              )
             ],
           )
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.red,
         //  child: Icon(Icons.add_shopping_cart_sharp),
-          child: Text('A'),
+          child: Text(
+              'A',
+              style: TextStyle(
+                fontSize: 40.0,
+                fontFamily: 'Corinthia',
+                fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
